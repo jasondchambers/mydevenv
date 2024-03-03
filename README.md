@@ -1,3 +1,7 @@
+# OS 
+
+I develop on both Linux and macOS. It depends on what I'm working on and how I'm feeling. The project I am working on may require something special. The dual approach to development tests both the portability of my development environment and my ability to recover/rebuild if necesssary. To make switching as less jarring as possible, I use as much of the same tools as and where possible. The only point of friction that tests my muscle memory and my patience is the good old copy/paste keyboard shortcuts between macOS and Linux. 
+
 ## Terminal 
 
 On the Mac, I use [iTerm](https://iterm2.com) and have done for many years, although I may give [Alacritty](https://github.com/alacritty/alacritty) a shot at some point.
