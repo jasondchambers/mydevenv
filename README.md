@@ -32,9 +32,12 @@ Install/upgrade [Neovim](https://neovim.io) first.
 
 Then, install [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). I don't have time to curate, configure and install all the plugins so kickstart gives me a good place to hang out for now.
 
-Add this to ~/.config/nvim/init.lua to get relative line numbering
+Add these to ~/.config/nvim/init.lua to get relative line numbering and keyboard shortcuts:
 
+    -- Jason's little hacks
     vim.wo.relativenumber = true
+    vim.api.nvim_set_keymap('n', '<F1>', ':Telescope find_files<CR>', {noremap = true, silent = true})
+    vim.api.nvim_set_keymap('n', '<F2>', ':Telescope buffers<CR>', {noremap = true, silent = true})
 
 For Telescope to work properly, install these separately:
 
