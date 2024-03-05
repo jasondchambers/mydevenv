@@ -22,6 +22,11 @@ Add these lines towards the end of the ~/.zshrc
     bindkey ^R history-incremental-search-backward 
     bindkey ^S history-incremental-search-forward
 
+Add these aliases to combat 30 years of muscle memory:
+
+    alias vim='nvim'
+    alias vi='nvim'
+
 ## Miniconda
 
 Used for managing multiple Python projects to avoid dependency conflicts.
@@ -51,6 +56,14 @@ For Telescope to work properly, install these separately:
  ## tmux
 
 Visit the [Github page](https://github.com/tmux/tmux/wiki) to download if needed. 
+
+## Docker
+
+I used Docker desktop on macOS. I just use vanilla Docker on Linux.
+
+## Jupyter Notebook
+
+Depending on what I'm working on, I may choose to use Jupyter Notebook (classic not JupyterLab). 
 
 ## Obsidian
 
