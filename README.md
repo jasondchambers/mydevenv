@@ -2,6 +2,8 @@
 
 I develop on both Linux and macOS. It depends on what I'm working on and how I'm feeling. The project I am working on may require something special. The dual approach to development tests both the portability of my development environment and my ability to recover/rebuild if necesssary. To make switching as less jarring as possible, I use as much of the same tools as and where possible. The only point of friction that tests my muscle memory and my patience is the good old copy/paste keyboard shortcuts between macOS and Linux. 
 
+Credit to [typecraft](https://www.youtube.com/watch?v=ZDV4edcaXSY) for providing the inspiration to bring my terminal experience bang up to date.
+
 ## Terminal 
 
 On the Mac, I use [iTerm](https://iterm2.com) and have done for many years, although I may give [Alacritty](https://github.com/alacritty/alacritty) a shot at some point.
@@ -12,7 +14,7 @@ Hack Nerd Font from [Nerdfonts](https://www.nerdfonts.com/font-downloads).
 
 ## Color Theme
 
-I use [Catppucin - Mocha](https://github.com/catppuccin/catppuccin) for the terminal, and Neovim.
+I use [Catppuccin - Mocha](https://github.com/catppuccin/catppuccin) for the terminal, and Neovim.
 
 ## Shell
 
@@ -24,7 +26,7 @@ Throughout my career, I've pretty much used them all:
 - 2015 - 2024 [zsh](https://zsh.sourceforge.io) + [Oh My Zsh](https://ohmyz.sh)
 - 2024 - Pres [zsh](https://zsh.sourceforge.io) + [Starship](https://starship.rs)
 
-I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow)
+I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by dropping in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files).
 
 Add these lines towards the end of the ~/.zshrc:
 
