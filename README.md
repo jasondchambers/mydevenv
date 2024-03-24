@@ -78,6 +78,8 @@ For Telescope to work properly, install these separately:
 
 Visit the [Github page](https://github.com/tmux/tmux/wiki) to download if needed. 
 
+The .tmux.conf file can be found in my [dot-files repo](https://github.com/jasondchambers/dot-files). Basically, I use tmux-plugins and dracula to trick out the status bar.
+
 ## Docker
 
 I used Docker desktop on macOS. I just use vanilla Docker on Linux.
