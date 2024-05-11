@@ -26,59 +26,42 @@ Throughout my career, I've pretty much used them all:
 - 2015 - 2024 [zsh](https://zsh.sourceforge.io) + [Oh My Zsh](https://ohmyz.sh)
 - 2024 - Pres [zsh](https://zsh.sourceforge.io) + [Starship](https://starship.rs)
 
+Zsh is now the default on macOs - just make sure it is a recent version. It typically will need to be installed on Linux.
+
+I use [Minoconda](https://docs.anaconda.com/free/miniconda/index.html) for managing multiple Python projects to avoid dependency conflicts. Be sure to install first before Starship otherwise it will stomp all over the terminal colors.
+
 I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by dropping in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files).
 
-Add these lines towards the end of the ~/.zshrc:
-
-    # Setup command line editing to vim
-    bindkey -v
-    bindkey ^R history-incremental-search-backward 
-    bindkey ^S history-incremental-search-forward
-
-Add this at the very end of the ~/.zshrc file:
-
-    eval "$(starship init zsh)"
-
-Add these aliases to combat 30 years of muscle memory:
-
-    alias vim='nvim'
-    alias vi='nvim'
-
-## Miniconda
-
-Used for managing multiple Python projects to avoid dependency conflicts.
-
-[Minoconda](https://docs.anaconda.com/free/miniconda/index.html)
+Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files) for the correct order of things in the ~/.zshrc file (there are two flavors - one for macos and one for Linux although, eventually there is no reason why they can't be combined into one. Don't merely copy over the zshrc.mac file over as it will be modified during the installation of things like miniconda, gcloud and nvm. 
 
 ## Neovim
 
 Install/upgrade [Neovim](https://neovim.io) first.
-
-Then, install [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim). I don't have time to curate, configure and install all the plugins so kickstart gives me a good place to hang out for now.
-
-For the Catppuccin theme, add this to the require('lazy').setup({ block in ~/.config/nvim/init.lua:
-
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-
-Add these to ~/.config/nvim/init.lua to get relative line numbering and keyboard shortcuts:
-
-    -- Jason's little hacks
-    vim.wo.relativenumber = true
-    vim.api.nvim_set_keymap('n', '<F1>', ':Telescope find_files<CR>', {noremap = true, silent = true})
-    vim.api.nvim_set_keymap('n', '<F2>', ':Telescope buffers<CR>', {noremap = true, silent = true})
-    vim.cmd.colorscheme "catppuccin"
-
 
 For Telescope to work properly, install these separately:
 
  - [ripgrep](https://github.com/BurntSushi/ripgrep)
  - [fd](https://github.com/sharkdp/fd)
 
- ## tmux
+Lazy is used to manage plugins. Access via :Lazy from within Neovim.
+
+For the LSP to work, npm is needed to be installed. Install this via [nvm](https://github.com/nvm-sh/nvm). Node can be installed as follows:
+
+    $ nvm install node
+
+Manage LSP via :Mason from within Neovim. pyright is what I use for Python. svelte-language-server is what I use for Svelte.
+
+## tmux
 
 Visit the [Github page](https://github.com/tmux/tmux/wiki) to download if needed. 
 
-The .tmux.conf file can be found in my [dot-files repo](https://github.com/jasondchambers/dot-files). Basically, I use tmux-plugins and dracula to trick out the status bar.
+Be sure to install TPM first 
+
+    $ git clone https://github.com/tmux-plugins/tpm.git ~/.tmux/plugins/tpm/
+
+The .tmux.conf file can be found in my [dot-files repo](https://github.com/jasondchambers/dot-files). Simply copy over into ~/.tmux.conf. If tmux still looks bland, tpm has not been installed properly - the fix is to manually run this:
+
+    $ ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 
 ## Docker
 
