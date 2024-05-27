@@ -32,7 +32,7 @@ I use [Minoconda](https://docs.anaconda.com/free/miniconda/index.html) for manag
 
 I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by dropping in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files).
 
-Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files) for the correct order of things in the ~/.zshrc file (there are two flavors - one for macos and one for Linux although, eventually there is no reason why they can't be combined into one. Don't merely copy over the zshrc.mac file over as it will be modified during the installation of things like miniconda, gcloud and nvm.
+Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files) for the correct order of things in the ~/.zshrc file (there are two flavors - one for macos and one for Linux although, eventually there is no reason why they can't be combined into one. Don't merely copy over the zshrc.mac file over as it will be modified during the installation of things like miniconda, gcloud and nvm. Instead, use it as a reference.
 
 ## Neovim
 
@@ -69,10 +69,76 @@ I used Docker desktop on macOS. I just use vanilla Docker on Linux.
 
 ## CLI Tools
 
-[fzf](https://github.com/junegunn/fzf)
-[fzf-git.sh](https://github.com/junegunn/fzf-git.sh)
-[bat](https://github.com/sharkdp/bat)
-[wget](https://www.gnu.org/software/wget/)
+- [fzf](https://github.com/junegunn/fzf)
+- [fzf-git.sh](https://github.com/junegunn/fzf-git.sh)
+- [bat](https://github.com/sharkdp/bat)
+- [wget](https://www.gnu.org/software/wget/)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
+## Cheatsheet
+
+### Neovim
+
+| Function keys       | Handy Reminders                            |
+| ------------------- | ------------------------------------------ |
+| F1 - Telescope find | :WhichKey to show key mappings             |
+| F2 - Buffers        | :Lazy to manage plugins                    |
+| F3 - Neotree        | :Mason to manage LSP                       |
+| F4 - Neotree close  | :vsplit                                    |
+| F5 - Gitsigns       | :split                                     |
+| F6 - Livegrep       | C-w q (quite pane)                         |
+|                     | :MarkDownPreview to preview markdown files |
+|                     | "+yy to yank to system clipboard           |
+|                     | Leaderkey = <space>                        |
+
+### Tmux
+
+| Handy Reminders                      |
+| ------------------------------------ |
+| **CLI**                              |
+| $ tmux ls                            |
+| $ tmux new -s \<session>             |
+| $ tmux a -t \<session>               |
+| $ tmux kill-session -t \<session>    |
+| Leaderkey = C-b                      |
+| **Sessions**                         |
+| \<Leader> d detach                   |
+| \<Leader> s switch                   |
+| \<Leader> C-s save session           |
+| \<Leader> C-r restore session        |
+| **Windows**                          |
+| \<Leader> c created                  |
+| \<Leader> w - see all panes/sessions |
+| **Panes**                            |
+| \<Leader> Esc resize                 |
+| \<Leader> m maximize/minimize        |
+| \<Leader> r reload                   |
+| \<Leader> - split horizontal         |
+| \<Leader> \| split vertical          |
+| \<Leader> \[ scroll (q to quit)      |
+
+## FZF
+
+Instead of:
+
+    $ nvim `fzf`
+
+Do this instead:
+
+    $ nvim C-t
+
+History search (C-r) has been setup to use fzf
+
+## Seamless Neovim and Tmux pane naviation
+
+Thanks to the wonderful [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator):
+
+| Handy Reminders |
+| --------------- |
+| C-h left pane   |
+| C-j down pane   |
+| C-k up pane     |
+| C-l right pane  |
 
 ## Jupyter Notebook
 
