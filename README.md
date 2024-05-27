@@ -86,7 +86,7 @@ I used Docker desktop on macOS. I just use vanilla Docker on Linux.
 | F3 - Neotree        | :Mason to manage LSP                       |
 | F4 - Neotree close  | :vsplit                                    |
 | F5 - Gitsigns       | :split                                     |
-| F6 - Livegrep       | C-w q (quite pane)                         |
+| F6 - Livegrep       | C-w q (quit pane)                          |
 |                     | :MarkDownPreview to preview markdown files |
 |                     | "+yy to yank to system clipboard           |
 |                     | Leaderkey = <space>                        |
