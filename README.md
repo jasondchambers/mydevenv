@@ -32,7 +32,7 @@ I use [Minoconda](https://docs.anaconda.com/free/miniconda/index.html) for manag
 
 I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by dropping in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files).
 
-Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files) for the correct order of things in the ~/.zshrc file (there are two flavors - one for macos and one for Linux although, eventually there is no reason why they can't be combined into one. Don't merely copy over the zshrc.mac file over as it will be modified during the installation of things like miniconda, gcloud and nvm. Instead, use it as a reference.
+Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files). Clone this repo into $HOME. Use GNU stow to create the symlinks from ~/.config into the dot-files to simplify management of the dot-files.
 
 ## Neovim
 
