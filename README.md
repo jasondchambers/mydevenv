@@ -1,12 +1,18 @@
 # OS
 
-I develop on both Linux and macOS. It depends on what I'm working on and how I'm feeling. The project I am working on may require something special. The dual approach to development tests both the portability of my development environment and my ability to recover/rebuild if necesssary. To make switching as less jarring as possible, I use as much of the same tools as and where possible. The only point of friction that tests my muscle memory and my patience is the good old copy/paste keyboard shortcuts between macOS and Linux.
+I develop on both Linux and macOS. It depends on what I'm working on and how I'm feeling. The project I am working on may require something special. I therefore require a familiar consistent almost identical personalized development envioronment across both Linux and macOS. Same colors, fonts, tools, keybindings, terminal, shell etc. The dual approach to development tests both the portability of my development environment and my ability to recover/rebuild if necesssary. The only point of friction that tests my muscle memory and my patience is the good old copy/paste keyboard shortcuts between macOS and Linux. I've started to use Homebrew for certain things on Linux (I have found Homebrew may contain later versions of things).
 
 Credit to [typecraft](https://www.youtube.com/watch?v=ZDV4edcaXSY) for providing the inspiration to bring my terminal experience bang up to date.
 
+## Configuration
+
+Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files). Clone this repo into $HOME. Use GNU stow to create the symlinks from ~/.config into the dot-files to simplify management of the dot-files.
+
 ## Terminal
 
-On the Mac, I use [iTerm](https://iterm2.com) and have done for many years, although I may give [Alacritty](https://github.com/alacritty/alacritty) a shot at some point.
+On both Mac and Linux, I use [Alacritty](https://github.com/alacritty/alacritty).
+
+On Linux (I prefer to use LTS versions - I'm using Pop!\_OS), I have found the repositories to be dated for Alacritty. The best way to install Alacritty, is via Cargo.
 
 ## Fonts
 
@@ -14,7 +20,7 @@ Hack Nerd Font from [Nerdfonts](https://www.nerdfonts.com/font-downloads).
 
 ## Color Theme
 
-I use [Catppuccin - Mocha](https://github.com/catppuccin/catppuccin) for the terminal, bat and Neovim.
+I use [Catppuccin - Mocha](https://github.com/catppuccin/catppuccin) for Alacritty, bat and Neovim.
 
 ## Shell
 
@@ -26,13 +32,11 @@ Throughout my career, I've pretty much used them all:
 - 2015 - 2024 [zsh](https://zsh.sourceforge.io) + [Oh My Zsh](https://ohmyz.sh)
 - 2024 - Pres [zsh](https://zsh.sourceforge.io) + [Starship](https://starship.rs)
 
-Zsh is now the default on macOs - just make sure it is a recent version. It typically will need to be installed on Linux.
+Zsh is now the default on macOS - just make sure it is a recent version. It may need to be installed on Linux.
 
 I use [Minoconda](https://docs.anaconda.com/free/miniconda/index.html) for managing multiple Python projects to avoid dependency conflicts. Be sure to install first before Starship otherwise it will stomp all over the terminal colors.
 
-I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by dropping in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files).
-
-Refer to my [dot-files repo](https://github.com/jasondchambers/dot-files). Clone this repo into $HOME. Use GNU stow to create the symlinks from ~/.config into the dot-files to simplify management of the dot-files.
+I recently switched to [Starship](https://starship.rs) using the [Gruvbox Rainbow Preset](https://starship.rs/presets/gruvbox-rainbow). Once "Gruvbox Rainbow Preset" has been installed, it will not be using the Catppuccin theme because it comes with it's own color theme. You can fix that by using in the starship.toml file from my [dot-files repo](https://github.com/jasondchambers/dot-files) (via GNU stow).
 
 ## Neovim
 
@@ -74,8 +78,16 @@ I used Docker desktop on macOS. I just use vanilla Docker on Linux.
 - [bat](https://github.com/sharkdp/bat)
 - [wget](https://www.gnu.org/software/wget/)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [stow](https://www.gnu.org/software/stow/)
 
 ## Cheatsheet
+
+### Alacritty
+
+| Mac                           | Linux                   |
+| ----------------------------- | ----------------------- |
+| Launch - Use Alfred           | Launch - Windowskey + T |
+| Increase fontsize - Alt + "+" |                         |
 
 ### Neovim
 
@@ -115,6 +127,7 @@ I used Docker desktop on macOS. I just use vanilla Docker on Linux.
 | \<Leader> r reload                   |
 | \<Leader> - split horizontal         |
 | \<Leader> \| split vertical          |
+| \<Leader> I - reload TPM             |
 | \<Leader> \[ scroll (q to quit)      |
 
 ## FZF
