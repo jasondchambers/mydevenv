@@ -1,0 +1,13 @@
+# ansible-playbook --connection=local --inventory 127.0.0.1, playbook.yml
+- name: Complete provisioning of my development environment
+  hosts: 127.0.0.1
+  tasks:
+    - name: Install nvm
+      shell: >
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+        creates=/home/{{ ansible_user_id }}/.nvm/nvm.sh
+
+    - name: Install node
+      shell: >
+        /usr/bin/zsh -c "source ~/.nvm/nvm.sh && nvm install node"
+        creates=/home/{{ ansible_user_id }}/.nvm/alias
