@@ -20,3 +20,9 @@
       shell: >
         /bin/bash -c "(echo; echo 'eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\"') >> $HOME/.zshrc"
         #/bin/bash -c "eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\""
+        #
+    - name: Install packages using Homebrew
+      community.general.homebrew:
+        name:
+          - tmux
+          - fzf
