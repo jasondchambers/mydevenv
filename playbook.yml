@@ -15,6 +15,7 @@
     - name: Install Homebrew
       shell: >
         /bin/bash -c "export NONINTERACTIVE=1; $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        creates=/home/linuxbrew/.linuxbrew/
 
     - name: Configure .zshrc for Homebrew
       shell: >
@@ -29,4 +30,4 @@
 
     - name: Configure .zshrc for Starship.rs
       shell: >
-        /bin/bash -c "(echo 'eval \"$(starship init zsh)\"') >> $HOME/.zshrc"
+        /bin/bash -c "echo 'eval \"\$(starship init zsh)\"' >> ~/.zshrc"
