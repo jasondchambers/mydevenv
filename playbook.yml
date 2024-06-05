@@ -38,3 +38,7 @@
       shell: >
         /bin/bash -c "echo 'source <(fzf --zsh)' >> ~/.zshrc; touch $HOME/.fzf.configured"
         creates=/home/{{ ansible_user_id }}/.fzf.configured
+
+    - name: Load tmux TPM plugins automatically
+      shell: >
+        /bin/bash -c "source ~/.zshrc && ~/.tmux/plugins/tpm/bin/install_plugins"
