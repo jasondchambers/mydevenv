@@ -19,7 +19,8 @@
 
     - name: Configure .zshrc for Homebrew
       shell: >
-        /bin/bash -c "(echo 'eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\"') >> $HOME/.zshrc"
+        /bin/bash -c "(echo 'eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\"') >> $HOME/.zshrc; touch $HOME/.homebrew.configured"
+        creates=/home/{{ ansible_user_id }}/.homebrew.configured
 
     - name: Install packages using Homebrew
       community.general.homebrew:
@@ -30,4 +31,5 @@
 
     - name: Configure .zshrc for Starship.rs
       shell: >
-        /bin/bash -c "echo 'eval \"\$(starship init zsh)\"' >> ~/.zshrc"
+        /bin/bash -c "echo 'eval \"\$(starship init zsh)\"' >> ~/.zshrc; touch $HOME/.starship.configured"
+        creates=/home/{{ ansible_user_id }}/.starship.configured
