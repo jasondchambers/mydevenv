@@ -41,4 +41,4 @@
 
     - name: Load tmux TPM plugins automatically
       shell: >
-        /bin/bash -c "source ~/.zshrc && ~/.tmux/plugins/tpm/bin/install_plugins"
+        /usr/bin/zsh -c "source ~/.zshrc && ~/.tmux/plugins/tpm/bin/install_plugins"
