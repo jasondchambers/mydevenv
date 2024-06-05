@@ -9,7 +9,7 @@
 
     - name: Install node
       shell: >
-        /usr/bin/zsh -c "source ~/.nvm/nvm.sh && nvm install node"
+        /bin/bash -c "source ~/.nvm/nvm.sh && nvm install node"
         creates=/home/{{ ansible_user_id }}/.nvm/alias
 
     - name: Install Homebrew
@@ -33,3 +33,8 @@
       shell: >
         /bin/bash -c "echo 'eval \"\$(starship init zsh)\"' >> ~/.zshrc; touch $HOME/.starship.configured"
         creates=/home/{{ ansible_user_id }}/.starship.configured
+
+    - name: Configure .zshrc for fzf
+      shell: >
+        /bin/bash -c "echo 'source <(fzf --zsh)' >> ~/.zshrc; touch $HOME/.fzf.configured"
+        creates=/home/{{ ansible_user_id }}/.fzf.configured
