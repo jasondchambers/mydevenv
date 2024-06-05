@@ -28,6 +28,7 @@
           - tmux
           - fzf
           - starship
+          - hugo
 
     - name: Configure .zshrc for Starship.rs
       shell: >
