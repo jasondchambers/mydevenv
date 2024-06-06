@@ -1,0 +1,10 @@
+# ansible-playbook --connection=local --inventory 127.0.0.1, playbook-clone-repos.yml
+- name: Clone all my repos
+  hosts: 127.0.0.1
+  tasks:
+    - name: www-jasonsblog
+      git:
+        repo: git@github.com:jasondchambers/www-jasonsblog.git
+        dest: ~/repos/www-jasonsblog
+
+
