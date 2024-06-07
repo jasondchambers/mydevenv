@@ -1,4 +1,6 @@
 # ansible-playbook --connection=local --inventory 127.0.0.1, playbook-clone-repos.yml
+# You need an SSH key first - once created, add the .pub key to GitHub
+# ssh-keygen -t ed25519 -C "your_email"
 - name: Clone all my repos
   hosts: 127.0.0.1
   tasks:
@@ -6,5 +8,23 @@
       git:
         repo: git@github.com:jasondchambers/www-jasonsblog.git
         dest: ~/repos/www-jasonsblog
-
-
+    - name: www-art
+      git:
+        repo: git@github.com:jasondchambers/www-art.git
+        dest: ~/repos/www-art
+    - name: www-house
+      git:
+        repo: git@github.com:jasondchambers/www-house.git
+        dest: ~/repos/www-house
+    - name: myresume
+      git:
+        repo: git@github.com:jasondchambers/myresume.git
+        dest: ~/repos/myresume
+    - name: wakeupmachine
+      git:
+        repo: git@github.com:jasondchambers/wakeupmachine.git
+        dest: ~/repos/wakeupmachine
+    - name: deploytool
+      git:
+        repo: git@github.com:jasondchambers/deploytool.git
+        dest: ~/repos/deploytool
