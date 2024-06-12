@@ -45,7 +45,7 @@
 
     - name: Configure .zshrc for zsh-autosuggestions
       shell: >
-        /bin/bash -c "echo 'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc; touch $HOME/.zsh-autosuggestions.configured"
+        /bin/bash -c "echo 'source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc; touch $HOME/.zsh-autosuggestions.configured"
         creates=/home/{{ ansible_user_id }}/.zsh-autosuggestions.configured
 
     - name: Load tmux TPM plugins automatically
