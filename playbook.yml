@@ -29,6 +29,9 @@
           - fzf
           - starship
           - hugo
+          - zsh-autosuggestions
+          - wakeonlan
+          - bat
 
     - name: Configure .zshrc for Starship.rs
       shell: >
