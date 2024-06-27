@@ -66,6 +66,12 @@ Do this instead:
 
 History search (C-r) has been setup to use fzf
 
+To kill a process, instead of ps, find the pid, copy, paste into kill -9, simply do this:
+
+    $ kill -9 **<tab>
+
+FZF is a game changer.
+
 ## Seamless Neovim and Tmux pane naviation
 
 Thanks to the wonderful [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator):
