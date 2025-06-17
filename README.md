@@ -23,9 +23,25 @@ My dot-files are avilable [here](https://github.com/jasondchambers/dot-files).
 | F4 - Neotree close  | :vsplit                                    |
 | F5 - Gitsigns       | :split                                     |
 | F6 - Livegrep       | C-w q (quit pane)                          |
-|                     | :MarkDownPreview to preview markdown files |
-|                     | "+yy to yank to system clipboard           |
+| F12 - Goto defn     | "+yy to yank to system clipboard           |
 |                     | Leaderkey = <space>                        |
+
+### Cursor 
+
+For AI assisted coding, I use Cursor. Switching from VSCode, I miss the sync settings feature as I work on multiple machines.
+Extensions:
+
+- Svelte for VS Code (svelte)
+- Python (ms-python)
+- Vim (vscodevim)
+
+Settings are stored in ~/Library/Application Support/Cursor/User/settings.json
+
+| Handy Reminders                      |
+| ------------------------------------ |
+| Cmd+P - find file                    |
+| F12 - goto definition                |
+
 
 ### Tmux
 
