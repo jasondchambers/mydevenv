@@ -10,6 +10,8 @@ My development environment has changed quite a lot over the past year. My philos
 4. Efficiency and speed - use the keyboard as much as possible
 5. Cost - Use Gemini CLI for coding AI assistance
 
+![Alt text](mydevenv.png "Screenshot of my development environment")
+
 #### O/S
 
 Omarchy is now used as my primary OS. I still use macOS for some workflows and so require
