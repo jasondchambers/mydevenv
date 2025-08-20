@@ -13,6 +13,7 @@ My development environment has changed quite a lot over the past year. My philos
 3. Consistency - across both Omarchy and macOS
 4. Efficiency and speed - use the keyboard as much as possible
 5. Cost - Use Gemini CLI for coding AI assistance
+6. Easier to get into and stay in a flow state 
 
 ![Alt text](mydevenv.png "Screenshot of my development environment")
 
