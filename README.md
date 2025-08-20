@@ -32,9 +32,9 @@ I've standardized on Alacritty as it is available on both Omarchy and macOS.
 
 ### Configurations
 
-[config-tmux](https://github.com/jasondchambers/config-tmux)
-[config-alacritty](https://github.com/jasondchambers/config-alacritty)
-[config-zsh](https://github.com/jasondchambers/config-zsh)
-[config-nvim](https://github.com/jasondchambers/config-nvim)
-[config-lazygit](https://github.com/jasondchambers/config-lazygit)
+- [config-tmux](https://github.com/jasondchambers/config-tmux)
+- [config-alacritty](https://github.com/jasondchambers/config-alacritty)
+- [config-zsh](https://github.com/jasondchambers/config-zsh)
+- [config-nvim](https://github.com/jasondchambers/config-nvim)
+- [config-lazygit](https://github.com/jasondchambers/config-lazygit)
 
