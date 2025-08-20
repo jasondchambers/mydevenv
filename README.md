@@ -1,5 +1,9 @@
 # My Development Environment
 
+Firstly, tools are a personal choice. What works for some my not work for others. If what you use works - that's great. I do encourage you to on occastion, reflect on your developer workflows and invest in how you might make it a little better, a little faster, and maybe a little prettier :-) 
+
+For what it's worth however here's what my development environment looks like.
+
 ### Highlights
 
 My development environment has changed quite a lot over the past year. My philosophy is:
