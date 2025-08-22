@@ -8,12 +8,12 @@ Here's what my development environment looks like, including dot-files and assoc
 
 My development environment has changed quite a lot over the past year. My philosophy is:
 
-1. Aesthics - must look pretty
+1. Aesthetics - must look pretty
 2. Minimal deviations from standard configurations - Must be low maintenance (e.g. Use Lazyvim)
-3. Consistency - across both Omarchy and macOS
+3. Consistency - across both Omarchy and macOS to reduce friction as I switch between the two
 4. Efficiency and speed - use the keyboard as much as possible
-5. Cost - Use Gemini CLI for coding AI assistance
-6. Easier to get into and stay in a flow state 
+5. Cost - Use Gemini CLI for coding AI assistance (as of time of writing, Gemini has a good balance of performance and value)
+6. Optimal - Easier to get into and stay in a flow state 
 
 ![Alt text](mydevenv.png "Screenshot of my development environment")
 
