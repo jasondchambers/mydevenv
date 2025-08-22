@@ -2,7 +2,7 @@
 
 Firstly, tools are a personal choice. What works for some may not work for others. If what you use works - that's great. I do encourage you to on occastion, reflect on your developer workflows and invest in how you might make things a little better, a little faster, and maybe a little prettier :-) 
 
-For what it's worth however here's what my development environment looks like.
+Here's my development environment looks like, including dot-files and associated install scripts. It's published mostly for myself, but if you find value in it too, that's great.
 
 ### Highlights
 
@@ -19,8 +19,9 @@ My development environment has changed quite a lot over the past year. My philos
 
 #### O/S
 
-Omarchy is now used as my primary OS. I still use macOS for some workflows and so require
-consistency for when I need to do some things on macOS. 
+Omarchy is now my preferred primary OS. I still use macOS for some workflows and so require
+consistency for when I need to do some things on macOS. Eventually, I intend to migrate away 
+from macOS (after 20 years).
 
 #### IDE
 
