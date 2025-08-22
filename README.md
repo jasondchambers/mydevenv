@@ -14,6 +14,7 @@ My development environment has changed quite a lot over the past year. My philos
 4. Efficiency and speed - use the keyboard as much as possible
 5. Cost - Use Gemini CLI for coding AI assistance (as of time of writing, Gemini has a good balance of performance and value)
 6. Optimal - Easier to get into and stay in a flow state 
+7. Modern - e.g. fd, rg, bat instead of find, grep, cat
 
 ![Alt text](mydevenv.png "Screenshot of my development environment")
 
