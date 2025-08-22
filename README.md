@@ -2,7 +2,7 @@
 
 Firstly, tools are a personal choice. What works for some may not work for others. If what you use works - that's great. I do encourage you to on occastion, reflect on your developer workflows and invest in how you might make things a little better, a little faster, and maybe a little prettier :-) 
 
-Here's my development environment looks like, including dot-files and associated install scripts. It's published mostly for myself, but if you find value in it too, that's great.
+Here's what my development environment looks like, including dot-files and associated install scripts. It's published mostly for myself, but if you find value in it too, that's great.
 
 ### Highlights
 
