@@ -19,8 +19,7 @@ My development environment has changed quite a lot over the past year. My philos
 
 #### O/S
 
-Omarchy is now my preferred primary OS. I still use macOS for some workflows and so require
-consistency for when I need to do some things on macOS. Eventually, I intend to migrate away 
+Omarchy is now my preferred primary OS. I still use macOS for some workflows and when I'm on the road (I don't have a Linux laptop at the moment) and so require consistency for when I need to do some things on macOS. Eventually, I intend to migrate away 
 from macOS (after 20 years).
 
 #### IDE
