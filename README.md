@@ -40,3 +40,6 @@ I've standardized on Alacritty as it is available on both Omarchy and macOS.
 - [config-nvim](https://github.com/jasondchambers/config-nvim)
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
 
+### Handy utils
+
+- [utils](https://github.com/jasondchambers/utils)
