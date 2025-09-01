@@ -38,6 +38,18 @@ All Git repos are stored in ~/repos. To streamline the process of working across
 
 This is achieved by simply storing these synced repos in my ~/Dropbox/synced_repos folder, and then having a symbolic link in ~/repos.
 
+### Installation
+
+On a fresh Mac, first run:
+
+    ./download.sh
+
+Then open up Dropbox and authenticate. Be sure to have synced_repos and Obsidian folder available off-line.
+
+Then run:
+
+    ./install.sh
+
 ### Configurations
 
 - [config-tmux](https://github.com/jasondchambers/config-tmux)
