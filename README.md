@@ -38,17 +38,17 @@ All Git repos are stored in ~/repos. To streamline the process of working across
 
 This is achieved by simply storing these synced repos in my ~/Dropbox/synced_repos folder, and then having a symbolic link in ~/repos.
 
-### Installation
+### Installation (macOS)
 
 On a fresh Mac, first run:
 
-    ./download.sh
+    curl -LsSf https://raw.githubusercontent.com/jasondchambers/mydevenv/refs/heads/main/download.sh | sh
 
 Then open up Dropbox and authenticate. Be sure to have synced_repos and Obsidian folder available off-line.
 
-Then run:
+Then run to install configurations:
 
-    ./install.sh
+    curl -LsSf https://raw.githubusercontent.com/jasondchambers/mydevenv/refs/heads/main/install.sh | sh
 
 ### Configurations
 
