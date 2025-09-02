@@ -20,3 +20,10 @@ hidutil property --matching "{\"ProductID\": $idProduct, \"VendorID\": $idVendor
     }
   ]
 }'
+
+if [ ! -f ~/Library/LaunchAgents/com.user.keyboardremap.plist ]; then
+  cp com.user.keyboardremap.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/com.user.keyboardremap.plist
+else
+  echo "LaunchAgent for keyboard remapping has already been installed"
+fi
