@@ -15,6 +15,7 @@ My development environment has changed quite a lot over the past year. My philos
 5. Cost - Use Gemini CLI for coding AI assistance (as of time of writing, Gemini has a good balance of performance and value)
 6. Optimal - Easier to get into and stay in a flow state 
 7. Modern - e.g. fd, rg, bat instead of find, grep, cat
+8. Multi-device - If I want to pick up a dev workflow on another machine without having to commit/push first
 
 ![Alt text](mydevenv.png "Screenshot of my development environment")
 
@@ -42,13 +43,17 @@ This is achieved by simply storing these synced repos in my ~/Dropbox/synced_rep
 
 On a fresh Mac, first run:
 
-    curl -LsSf https://raw.githubusercontent.com/jasondchambers/mydevenv/refs/heads/main/download.sh | sh
+    ./download.sh
 
 Then open up Dropbox and authenticate. Be sure to have synced_repos and Obsidian folder available off-line.
 
 Then run to install configurations:
 
-    curl -LsSf https://raw.githubusercontent.com/jasondchambers/mydevenv/refs/heads/main/install.sh | sh
+    ./install.sh
+
+Finally, to fix keyboard mappings for the Razer Ornata keyboard, run this:
+
+    ./mapkeyboard.sh
 
 ### Configurations
 
