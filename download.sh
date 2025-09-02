@@ -16,19 +16,17 @@ brew install zsh-autosuggestions
 brew install starship
 brew install lazygit
 brew install neovim
-
+brew install btop
 
 brew install --cask alacritty
 brew install --cask typora
 brew install --cask font-hack-nerd-font
 brew install --cask dropbox
 
-
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-
 if [ -d ~/repos/fzf-git.sh ]; then
-   echo "Skipping clone of fzf-git.sh"
+  echo "Skipping clone of fzf-git.sh"
 else
-   git clone https://github.com/junegunn/fzf-git.sh.git ~/repos/fzf-git.sh
+  git clone https://github.com/junegunn/fzf-git.sh.git ~/repos/fzf-git.sh
 fi
