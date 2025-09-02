@@ -39,7 +39,12 @@ generate_github_ssh_key() {
 }
 
 fix_macos_scrolling() {
-  defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+  if [ "$(uname)" = "Darwin" ]; then
+    defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+    echo "Running on macOS"
+  else
+    echo "Not running on macOS - default scrolling direction is not an issue"
+  fi
 }
 
 main() {
