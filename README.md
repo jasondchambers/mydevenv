@@ -62,6 +62,7 @@ Finally, to fix keyboard mappings for the Razer Ornata keyboard, run this:
 - [config-zsh](https://github.com/jasondchambers/config-zsh)
 - [config-nvim](https://github.com/jasondchambers/config-nvim)
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
+- [config-hypr](https://github.com/jasondchambers/config-hypr)
 
 ### Handy utils
 
