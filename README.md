@@ -47,11 +47,12 @@ On a fresh Mac, first run:
 
 Then open up Dropbox and authenticate. Be sure to have synced_repos and Obsidian folder available off-line.
 
-Then run to install configurations:
+Then run to install configurations, generate a Github key and fix the stupid
+default scrolling direction on macOS:
 
     ./configure.sh
 
-Finally, to fix keyboard mappings for the Razer Ornata keyboard, run this:
+Finally, for macOS fix keyboard mappings for the Razer Ornata keyboard, run this:
 
     ./mapkeyboard.sh
 
