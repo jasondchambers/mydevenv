@@ -56,6 +56,17 @@ Finally, for macOS fix keyboard mappings for the Razer Ornata keyboard, run this
 
     ./mapkeyboard.sh
 
+### Installation (Omarchy)
+
+Omarchy has pretty much everything installed except for a few exceptions. TODO -
+identify what's missing and create an install script.
+
+Dropbox needs to be installed and authenticated. Be sure to have synced_repos and Obsidian folder available off-line.
+
+Then run to install configurations and generate a Github key:
+
+    ./configure.sh
+
 ### Configurations
 
 - [config-tmux](https://github.com/jasondchambers/config-tmux)
