@@ -10,7 +10,7 @@ My development environment has changed quite a lot over the past year. My philos
 
 1. Aesthetics - must look pretty
 2. Minimal deviations from standard configurations - Must be low maintenance (e.g. Use Lazyvim)
-3. Consistency - across both Omarchy and macOS to reduce friction as I switch between the two
+3. Consistency - across both Omarchy and macOS to reduce friction as I switch between the two e.g. keyboard shortcuts
 4. Efficiency and speed - use the keyboard as much as possible
 5. Cost - Use Gemini CLI for coding AI assistance (as of time of writing, Gemini has a good balance of performance and value)
 6. Optimal - Easier to get into and stay in a flow state 
@@ -63,7 +63,8 @@ Finally, for macOS fix keyboard mappings for the Razer Ornata keyboard, run this
 - [config-zsh](https://github.com/jasondchambers/config-zsh)
 - [config-nvim](https://github.com/jasondchambers/config-nvim)
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
-- [config-hypr](https://github.com/jasondchambers/config-hypr)
+- [config-hypr](https://github.com/jasondchambers/config-hypr) (Omarchy only)
+- [config-hammerspoon](https://github.com/jasondchambers/config-hammerspoon) (macOS only)
 
 ### Handy utils
 
