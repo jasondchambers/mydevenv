@@ -1,56 +1,55 @@
 #!/usr/bin/env sh
 
-mkdir -p ~/repos
-
-link_to_synced_repo_and_install() {
-  local repo=$1
-  if [ -L ~/repos/${repo} ]; then
-    echo "${repo} is already linked"
-  else
-    echo "Pointing ~/repos/$repo to ~/Dropbox/synced_repos/$repo"
-    ln -s ~/Dropbox/synced_repos/$repo ~/repos/$repo
-  fi
-  cd ~/repos/${repo}
-  if [ -f install.sh ]; then
-    ./install.sh
-  fi
-  cd ..
-}
-
-configure_environment() {
-  if [ -d ~/Dropbox/synced_repos ]; then
-    link_to_synced_repo_and_install config-alacritty
-    link_to_synced_repo_and_install config-lazygit
-    link_to_synced_repo_and_install config-nvim
-    link_to_synced_repo_and_install config-tmux
-    link_to_synced_repo_and_install config-zsh
-    link_to_synced_repo_and_install utils
-  else
-    echo "Dropbox has not been fully installed yet"
-  fi
-}
-
-generate_github_ssh_key() {
-  echo "Let's generate an SSH key for GitHub"
-  ssh-keygen -t ed25519 -C "jason.d.chambers@gmail.com"
-  echo "Now copy/paste the following into a new SSH key at https://github.com/settings/keys"
-  cat ~/.ssh/id_ed25519.pub | pbcopy
-  cat ~/.ssh/id_ed25519.pub
-}
-
-fix_macos_scrolling() {
+install_missing_cli_tools_for_macos() {
   if [ "$(uname)" = "Darwin" ]; then
-    defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
     echo "Running on macOS"
+    # Install homebrew (includes Xcode Command Line Tools)
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    brew install bash
+    brew install tmux
+    brew install tree
+    brew install fzf
+    brew install fd
+    brew install ripgrep
+    brew install zoxide
+    brew install eza
+    brew install bat
+    brew install zsh-autosuggestions
+    brew install starship
+    brew install lazygit
+    brew install neovim
+    brew install btop
+  fi
+}
+
+install_missing_apps_for_macos() {
+  if [ "$(uname)" = "Darwin" ]; then
+    echo "Running on macOS"
+    brew install --cask alacritty
+    brew install --cask typora
+    brew install --cask font-hack-nerd-font
+    brew install --cask dropbox
+  fi
+}
+
+install_uv() {
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+}
+
+install_fzf_git() {
+  if [ -d ~/repos/fzf-git.sh ]; then
+    echo "Skipping clone of fzf-git.sh"
   else
-    echo "Not running on macOS - default scrolling direction is not an issue"
+    git clone https://github.com/junegunn/fzf-git.sh.git ~/repos/fzf-git.sh
   fi
 }
 
 main() {
-  configure_environment
-  generate_github_ssh_key
-  fix_macos_scrolling
+  install_missing_cli_tools_for_macos
+  install_missing_apps_for_macos
+  install_uv
+  install_fzf_git
 }
 
 main

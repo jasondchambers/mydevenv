@@ -43,13 +43,13 @@ This is achieved by simply storing these synced repos in my ~/Dropbox/synced_rep
 
 On a fresh Mac, first run:
 
-    ./download.sh
+    ./install.sh
 
 Then open up Dropbox and authenticate. Be sure to have synced_repos and Obsidian folder available off-line.
 
 Then run to install configurations:
 
-    ./install.sh
+    ./configure.sh
 
 Finally, to fix keyboard mappings for the Razer Ornata keyboard, run this:
 
