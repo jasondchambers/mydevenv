@@ -15,6 +15,7 @@ install_missing_cli_tools_for_macos() {
     brew install zoxide
     brew install eza
     brew install bat
+    brew install dysk
     brew install zsh-autosuggestions
     brew install starship
     brew install lazygit
