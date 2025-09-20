@@ -16,6 +16,7 @@ install_missing_cli_tools_for_macos() {
     brew install eza
     brew install bat
     brew install dysk
+    brew install gemini-cli
     brew install zsh-autosuggestions
     brew install starship
     brew install lazygit
