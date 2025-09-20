@@ -1,33 +1,33 @@
 #!/usr/bin/env sh
 
+configure_karabiner() {
+  local karabiner_config_directory="${HOME}/.config/karabiner"
+  echo "Configuring Karabiner Elements"
+  if [ -d "$karabiner_config_directory" ]; then
+    echo "Karabiner Elements has been installed"
+    local karabiner_config_file="${karabiner_config_directory}/karabiner.json"
+    if [ -e "$karabiner_config_file" ]; then
+      echo "Found existing Karabiner Elements config file"
+      if [ ! -L "$karabiner_config_file" ]; then
+        echo "Found existing Karabiner Elements config file - backing it up"
+        mv $karabiner_config_file{,.bak}
+      else
+        echo "Karabiner Elements config is linked - removing it"
+        rm -f $karabiner_config_file
+      fi
+    fi
+    echo "Pointing Karabiner Elements to this configuration"
+    ln -s "$PWD/karabiner.json" $karabiner_config_file
+  else
+    echo "Karabiner Elements has not been installed"
+  fi
+}
+
 fix_macos_keyboard_mapping_for_razer_ornata() {
   # Let's fix the mapping for the Razer Ornata keyboard
   # Weirdly, the Option and Command keys are flipped
   # so, flip them back
-
-  idVendor="0x1532"
-  idProduct="0x21e"
-
-  # Swap Left Command (0x7000000E3) and Left Option (0x7000000E2)
-  hidutil property --matching "{\"ProductID\": $idProduct, \"VendorID\": $idVendor}" --set '{
-  "UserKeyMapping": [
-    {
-      "HIDKeyboardModifierMappingSrc": 0x7000000E3,
-      "HIDKeyboardModifierMappingDst": 0x7000000E2
-    },
-    {
-      "HIDKeyboardModifierMappingSrc": 0x7000000E2,
-      "HIDKeyboardModifierMappingDst": 0x7000000E3
-    }
-    ]
-  }'
-
-  if [ ! -f ~/Library/LaunchAgents/com.user.keyboardremap.plist ]; then
-    cp com.user.keyboardremap.plist ~/Library/LaunchAgents
-    launchctl load ~/Library/LaunchAgents/com.user.keyboardremap.plist
-  else
-    echo "LaunchAgent for keyboard remapping has already been installed"
-  fi
+  configure_karabiner
 }
 
 main() {
