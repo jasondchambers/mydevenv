@@ -39,6 +39,11 @@ All Git repos are stored in ~/repos. To streamline the process of working across
 
 This is achieved by simply storing these synced repos in my ~/Dropbox/synced_repos folder, and then having a symbolic link in ~/repos.
 
+Note that certain repos do not work very well - for example, config-nvim is
+unique in that when you switch the theme in Omarchy, Neovim picks up the theme.
+This behavior breaks on macOs because it cannot find the Omarchy theme.
+Therefore, ensure that config-nvim is not included in the synced repos.
+
 ### Installation (macOS)
 
 On a fresh Mac, first run:
@@ -51,10 +56,6 @@ Then run to install configurations, generate a Github key and fix the stupid
 default scrolling direction on macOS:
 
     ./configure.sh
-
-Finally, for macOS fix keyboard mappings for the Razer Ornata keyboard, run this:
-
-    ./mapkeyboard.sh
 
 ### Installation (Omarchy)
 
@@ -76,6 +77,7 @@ Then run to install configurations and generate a Github key:
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
 - [config-hypr](https://github.com/jasondchambers/config-hypr) (Omarchy only)
 - [config-hammerspoon](https://github.com/jasondchambers/config-hammerspoon) (macOS only)
+- [config-karabiner](https://github.com/jasondchambers/config-karabiner) (macOS only)
 
 ### Handy utils
 
