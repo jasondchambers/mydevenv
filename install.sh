@@ -18,10 +18,12 @@ install_missing_cli_tools_for_macos() {
     brew install dysk
     brew install gemini-cli
     brew install zsh-autosuggestions
+    brew install zsh-syntax-highlighting
     brew install starship
     brew install lazygit
     brew install neovim
     brew install btop
+    brew install font-meslo-lg-nerd-font
   fi
 }
 
