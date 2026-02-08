@@ -12,10 +12,9 @@ My development environment has changed quite a lot over the past year. My philos
 2. Minimal deviations from standard configurations - Must be low maintenance (e.g. Use Lazyvim)
 3. Consistency - across both Omarchy and macOS to reduce friction as I switch between the two e.g. keyboard shortcuts
 4. Efficiency and speed - use the keyboard as much as possible
-5. Cost - Use Gemini CLI for coding AI assistance (as of time of writing, Gemini has a good balance of performance and value)
-6. Optimal - Easier to get into and stay in a flow state 
-7. Modern - e.g. \[fd, rg, bat, zoxide, dysk, btop, eza\] instead of/in addition to \[find, grep, cat, cd, df, top, ls\]
-8. Multi-device - If I want to pick up a dev workflow on another machine without having to commit/push first
+5. Optimal - Easier to get into and stay in a flow state 
+6. Modern - e.g. \[fd, rg, bat, zoxide, dysk, btop, eza\] instead of/in addition to \[find, grep, cat, cd, df, top, ls\]
+7. Multi-device - If I want to pick up a dev workflow on another machine without having to commit/push first
 
 ![Alt text](mydevenv.png "Screenshot of my development environment")
 
