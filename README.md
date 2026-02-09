@@ -73,6 +73,7 @@ Then run to install configurations and generate a Github key:
 - [config-alacritty](https://github.com/jasondchambers/config-alacritty)
 - [config-zsh](https://github.com/jasondchambers/config-zsh)
 - [config-nvim](https://github.com/jasondchambers/config-nvim)
+- [config-git](https://github.com/jasondchambers/config-git)
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
 - [config-hypr](https://github.com/jasondchambers/config-hypr) (Omarchy only)
 - [config-hammerspoon](https://github.com/jasondchambers/config-hammerspoon) (macOS only)

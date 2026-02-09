@@ -24,6 +24,7 @@ install_missing_cli_tools_for_macos() {
     brew install neovim
     brew install btop
     brew install font-meslo-lg-nerd-font
+    brew install git-delta
   fi
 }
 
