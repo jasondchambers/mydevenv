@@ -72,6 +72,7 @@ Then run to install configurations and generate a Github key:
 - [config-tmux](https://github.com/jasondchambers/config-tmux)
 - [config-alacritty](https://github.com/jasondchambers/config-alacritty)
 - [config-zsh](https://github.com/jasondchambers/config-zsh)
+- [config-starship](https://github.com/jasondchambers/config-starship)
 - [config-nvim](https://github.com/jasondchambers/config-nvim)
 - [config-git](https://github.com/jasondchambers/config-git)
 - [config-lazygit](https://github.com/jasondchambers/config-lazygit)
