@@ -32,6 +32,10 @@ also introduced lazygit into my workflows.
 
 I've standardized on Alacritty as it is available on both Omarchy and macOS.
 
+#### Secrets Management
+
+I've standardized on Doppler for managing secrets. 
+
 ### Conventions
 
 All Git repos are stored in ~/repos. To streamline the process of working across multiple devices, there are certain repos I choose to rely on Dropbox to sync across my devices. This enables me to pick up where I left off on a different device without having to rely on Git. When it comes to my developement environment, changes I make are instantly applied to all my devices automatically.
